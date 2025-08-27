@@ -24,6 +24,16 @@
     		<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
    		<sonar.language>java</sonar.language>
 	</properties>
+
+
+	<!-- this script is to push artifact to Codeartifact comment this below code after this try -->
+	<distributionManagement>
+  <repository>
+    <id>codeartifact</id>
+    <url>https://maven-customer-919951157823.d.codeartifact.us-east-2.amazonaws.com/maven/maven-releases/</url>
+  </repository>
+	</distributionManagement>
+
 	
 <!--     <distributionManagement>
         <repository>
